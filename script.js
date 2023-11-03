@@ -12,7 +12,7 @@ var gameover = new Text();
 
 var play = true;
 
-document.addEventListener("keydown", function(event){
+document.addEventListener("keydown", function(event){ //mover a abelha
   if (event.key === "a"){
     bee.dir = -3;
   }
@@ -42,7 +42,7 @@ function collides() {
   }
 }
 
-function gameOver(){
+function gameOver(){ //gameover
   if(bee.lifes <= 0){
     play = false;
   }
